@@ -12,7 +12,8 @@ namespace FuelCalculator
 {
     public partial class MainForm : Form
     {
-        private const decimal GAL_TO_KG = 2.68735M;
+        private const decimal GAL_TO_KG_100LL = 2.68735M;
+        private const decimal GAL_TO_KG_JETA = 3.08447722M;
         private const decimal KG_TO_POUND = 2.205M;
         private const decimal GAL_TO_LITER = 3.7854M;
 
@@ -54,7 +55,7 @@ namespace FuelCalculator
             }
 
             decimal fuelAmountLiter = fuelAmount * GAL_TO_LITER;
-            decimal fuelWeightKg = fuelAmount * GAL_TO_KG;
+            decimal fuelWeightKg = fuelAmount * (rb100LL.Checked ? GAL_TO_KG_100LL : GAL_TO_KG_JETA);
             decimal fuelWeightLb = fuelWeightKg * KG_TO_POUND;
 
             tbFuelWeightKg.Text = string.Format("{0:###0.0}", fuelWeightKg);

@@ -45,6 +45,10 @@
             this.tbFuelAmountLtrPerTank = new System.Windows.Forms.TextBox();
             this.tbFuelAmountLtr = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.rb100LL = new System.Windows.Forms.RadioButton();
+            this.rbJetA = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbFuelAmount
@@ -81,7 +85,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(12, 69);
+            this.btnCalculate.Location = new System.Drawing.Point(12, 76);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 4;
@@ -92,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 106);
+            this.label3.Location = new System.Drawing.Point(12, 113);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 5;
@@ -100,7 +104,7 @@
             // 
             // tbFuelWeightKg
             // 
-            this.tbFuelWeightKg.Location = new System.Drawing.Point(118, 103);
+            this.tbFuelWeightKg.Location = new System.Drawing.Point(118, 110);
             this.tbFuelWeightKg.Name = "tbFuelWeightKg";
             this.tbFuelWeightKg.ReadOnly = true;
             this.tbFuelWeightKg.Size = new System.Drawing.Size(48, 20);
@@ -108,7 +112,7 @@
             // 
             // tbFuelWeightKgPerTank
             // 
-            this.tbFuelWeightKgPerTank.Location = new System.Drawing.Point(241, 103);
+            this.tbFuelWeightKgPerTank.Location = new System.Drawing.Point(241, 110);
             this.tbFuelWeightKgPerTank.Name = "tbFuelWeightKgPerTank";
             this.tbFuelWeightKgPerTank.ReadOnly = true;
             this.tbFuelWeightKgPerTank.Size = new System.Drawing.Size(48, 20);
@@ -117,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(184, 106);
+            this.label4.Location = new System.Drawing.Point(184, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 8;
@@ -126,7 +130,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(184, 132);
+            this.label5.Location = new System.Drawing.Point(184, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 12;
@@ -134,7 +138,7 @@
             // 
             // tbFuelWeightLbPerTank
             // 
-            this.tbFuelWeightLbPerTank.Location = new System.Drawing.Point(241, 129);
+            this.tbFuelWeightLbPerTank.Location = new System.Drawing.Point(241, 136);
             this.tbFuelWeightLbPerTank.Name = "tbFuelWeightLbPerTank";
             this.tbFuelWeightLbPerTank.ReadOnly = true;
             this.tbFuelWeightLbPerTank.Size = new System.Drawing.Size(48, 20);
@@ -142,7 +146,7 @@
             // 
             // tbFuelWeightLb
             // 
-            this.tbFuelWeightLb.Location = new System.Drawing.Point(118, 129);
+            this.tbFuelWeightLb.Location = new System.Drawing.Point(118, 136);
             this.tbFuelWeightLb.Name = "tbFuelWeightLb";
             this.tbFuelWeightLb.ReadOnly = true;
             this.tbFuelWeightLb.Size = new System.Drawing.Size(48, 20);
@@ -151,7 +155,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 132);
+            this.label6.Location = new System.Drawing.Point(12, 139);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 9;
@@ -160,7 +164,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(184, 158);
+            this.label7.Location = new System.Drawing.Point(184, 165);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 13);
             this.label7.TabIndex = 16;
@@ -168,7 +172,7 @@
             // 
             // tbFuelAmountLtrPerTank
             // 
-            this.tbFuelAmountLtrPerTank.Location = new System.Drawing.Point(241, 155);
+            this.tbFuelAmountLtrPerTank.Location = new System.Drawing.Point(241, 162);
             this.tbFuelAmountLtrPerTank.Name = "tbFuelAmountLtrPerTank";
             this.tbFuelAmountLtrPerTank.ReadOnly = true;
             this.tbFuelAmountLtrPerTank.Size = new System.Drawing.Size(48, 20);
@@ -176,7 +180,7 @@
             // 
             // tbFuelAmountLtr
             // 
-            this.tbFuelAmountLtr.Location = new System.Drawing.Point(118, 155);
+            this.tbFuelAmountLtr.Location = new System.Drawing.Point(118, 162);
             this.tbFuelAmountLtr.Name = "tbFuelAmountLtr";
             this.tbFuelAmountLtr.ReadOnly = true;
             this.tbFuelAmountLtr.Size = new System.Drawing.Size(48, 20);
@@ -185,18 +189,52 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 158);
+            this.label8.Location = new System.Drawing.Point(12, 165);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 13);
             this.label8.TabIndex = 13;
             this.label8.Text = "Fuel Amount [l]";
+            // 
+            // rb100LL
+            // 
+            this.rb100LL.AutoSize = true;
+            this.rb100LL.Checked = true;
+            this.rb100LL.Location = new System.Drawing.Point(6, 19);
+            this.rb100LL.Name = "rb100LL";
+            this.rb100LL.Size = new System.Drawing.Size(55, 17);
+            this.rb100LL.TabIndex = 17;
+            this.rb100LL.TabStop = true;
+            this.rb100LL.Text = "100LL";
+            this.rb100LL.UseVisualStyleBackColor = true;
+            // 
+            // rbJetA
+            // 
+            this.rbJetA.AutoSize = true;
+            this.rbJetA.Location = new System.Drawing.Point(6, 42);
+            this.rbJetA.Name = "rbJetA";
+            this.rbJetA.Size = new System.Drawing.Size(49, 17);
+            this.rbJetA.TabIndex = 18;
+            this.rbJetA.Text = "Jet-A";
+            this.rbJetA.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rb100LL);
+            this.groupBox1.Controls.Add(this.rbJetA);
+            this.groupBox1.Location = new System.Drawing.Point(193, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(95, 68);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Fuel Type";
             // 
             // MainForm
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 188);
+            this.ClientSize = new System.Drawing.Size(305, 190);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbFuelAmountLtrPerTank);
             this.Controls.Add(this.tbFuelAmountLtr);
@@ -219,6 +257,8 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fuel Calculator";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,6 +283,9 @@
         private System.Windows.Forms.TextBox tbFuelAmountLtrPerTank;
         private System.Windows.Forms.TextBox tbFuelAmountLtr;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton rb100LL;
+        private System.Windows.Forms.RadioButton rbJetA;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
